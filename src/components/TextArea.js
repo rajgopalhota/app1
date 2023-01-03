@@ -4,6 +4,9 @@ import './CSS/textarea.css'
 
 export default function TextArea(props) {
     const [text, setText] = useState("");
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText(text);
+    }
     const handleOnClick = () => {
         let newText = text.toUpperCase();
         setText(newText);
@@ -27,12 +30,12 @@ export default function TextArea(props) {
             <div className="container my-5">
                 <h4>{props.heading}</h4>
                 <div className="form-floating">
-                    <textarea className="form-control" id="floatingTextarea" value={text} onChange={handleOnChange} ></textarea>
-                    <label htmlFor="textBox">Enter Text Here</label>
+                    <textarea className="form-control" id="floatingTextarea" value={text} onChange={handleOnChange} placeholder="Enter Your Text Here"></textarea>
                 </div>
                 <div className="btns">
                     <button className="btn btn-primary my-4 mx-2" onClick={handleOnClick}>To Uppercase</button>
                     <button className="btn btn-primary my-4 mx-2" onClick={handleOnClickLow}>To Lowercase</button>
+                    <button className="btn btn-primary my-4 mx-2" onClick={copyToClipboard}>Copy to clip board</button>
                     <button className="btn btn-primary my-4 mx-2" onClick={clearClick}>Clear</button>
                 </div>
                 <div className="container summaryword">
