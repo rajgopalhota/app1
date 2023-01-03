@@ -9,7 +9,7 @@ function App() {
       <section></section>
       <Navbar i2="About Us" />
       <Routes>
-        <Route path='/' element={<TextArea heading="Convert to Uppercase" />} />
+        <Route path='/' element={<TextArea heading="Enter Text to analyze:" />} />
         <Route path='/about' element={<About />} />
       </Routes>
     </>

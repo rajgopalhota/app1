@@ -28,7 +28,7 @@ export default function TextArea(props) {
     return (
         <>
             <div className="container my-5">
-                <h4>{props.heading}</h4>
+                <h2>{props.heading}</h2>
                 <div className="inputfloat">
                     <textarea
                         className="form-control"

@@ -60,3 +60,9 @@ h1{
   mix-blend-mode: overlay;
   text-shadow: 0 0 6px black;
 }
+h2{
+  font-size: 70px;
+  font-weight: 700;
+  mix-blend-mode: overlay;
+  text-shadow: 0 0 6px black;
+}
