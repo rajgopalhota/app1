@@ -1,10 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 body {
+  color: white;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+section{
+  z-index: -999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background:linear-gradient(90deg, #3f51b5, #00bcd4);
+  animation: animate 15s linear infinite;
+}
+section:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 100vh solid transparent;
+  border-left: 100vh solid #fff;
+  opacity: 0.1;
+}
+section:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right : 0;
+  border-top: 100vh solid transparent;
+  border-right: 100vh solid #fff;
+  opacity: 0.1;
+}
+@keyframes animate{
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  50%{
+    filter: hue-rotate(360deg);
+  }
+  100%{
+    filter: hue-rotate(0deg);
+  }
 }
 
 code {

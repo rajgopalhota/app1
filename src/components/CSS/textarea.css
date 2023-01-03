@@ -1,0 +1,32 @@
+.form-floating{
+    box-shadow: 0 0 12px black;
+  }
+  
+  .summaryword{
+    text-align: center;
+    padding: 0.5% 2%;
+    background-color: #ffcb7867;
+    display: flexbox;
+    text-transform: capitalize;
+    border-radius: 12px;
+    box-shadow: 0 0 12px black;
+  }
+ h4{
+    font-size: 39px;
+    font-weight: 800;
+    padding: 0.5% 2%;
+    color: aliceblue;
+    text-decoration: underline;
+    mix-blend-mode : overlay;
+}
+.btn{
+    border: 2px solid aliceblue;
+    border-radius: 22px;
+    box-shadow: 0 0 8px black;
+}
+.btn:hover{
+    color: aliceblue;
+    background-color: black;
+    border: 2px solid aliceblue;
+}
+  
