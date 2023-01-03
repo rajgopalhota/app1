@@ -29,8 +29,15 @@ export default function TextArea(props) {
         <>
             <div className="container my-5">
                 <h4>{props.heading}</h4>
-                <div className="form-floating">
-                    <textarea className="form-control" id="floatingTextarea" value={text} onChange={handleOnChange} placeholder="Enter Your Text Here"></textarea>
+                <div className="inputfloat">
+                    <textarea
+                        className="form-control"
+                        value={text}
+                        onChange={handleOnChange}
+                        id="myBox"
+                        rows="8"
+                        placeholder="Enter text here...."
+                    ></textarea>
                 </div>
                 <div className="btns">
                     <button className="btn btn-primary my-4 mx-2" onClick={handleOnClick}>To Uppercase</button>

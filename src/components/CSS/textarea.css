@@ -1,6 +1,7 @@
-.form-floating{
+.inputfloat{
   color: black;
     box-shadow: 0 0 12px black;
+    height: auto;
   }
   
   .summaryword{
